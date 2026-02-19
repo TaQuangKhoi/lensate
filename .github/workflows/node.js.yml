@@ -34,5 +34,6 @@ jobs:
 
     - run: pnpm install
     - run: pnpm build
+    - run: pnpm build:firefox
     
     # - run: pnpm test
