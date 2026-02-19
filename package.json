@@ -3,6 +3,7 @@
   "description": "Generic DOM translation browser extension",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "pnpm@10.28.0",
   "author": "Tạ Quang Khôi",
   "license": "MIT",
   "type": "module",
