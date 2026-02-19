@@ -1,8 +1,10 @@
 {
-  "name": "wxt-react-starter",
-  "description": "manifest.json description",
+  "name": "lensate",
+  "description": "Generic DOM translation browser extension",
   "private": true,
   "version": "0.0.0",
+  "author": "Tạ Quang Khôi",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "wxt",
@@ -15,13 +17,22 @@
     "postinstall": "wxt prepare"
   },
   "dependencies": {
+    "@wxt-dev/storage": "^1.2.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.575.0",
+    "openai": "^6.22.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.2.0",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
     "@wxt-dev/module-react": "^1.1.5",
+    "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3",
     "wxt": "^0.20.17"
   }
