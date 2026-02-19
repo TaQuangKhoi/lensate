@@ -25,6 +25,7 @@ function App() {
   const [apiKey, setApiKey] = useState('');
   const [recipeText, setRecipeText] = useState(JSON.stringify(DEFAULT_RECIPE, null, 2));
   const [status, setStatus] = useState('');
+  const [saved, setSaved] = useState(false);
 
   useEffect(() => {
     void (async () => {
@@ -48,6 +49,8 @@ function App() {
       await apiKeyUseCase.save(apiKey);
     }
     setStatus('Saved provider settings.');
+    setSaved(true);
+    setTimeout(() => setSaved(false), 700);
   };
 
   const importRecipe = async () => {
@@ -125,7 +128,7 @@ function App() {
         />
       </label>
 
-      <button type="button" onClick={() => void saveProvider()}>
+      <button type="button" className={`btn-save${saved ? ' saved' : ''}`} onClick={() => void saveProvider()}>
         Save Provider
       </button>
 
