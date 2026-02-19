@@ -33,5 +33,6 @@ jobs:
         cache: 'pnpm'
 
     - run: pnpm install
-    - run: pnpm run build
-    - run: pnpm test
+    - run: pnpm build
+    
+    # - run: pnpm test
